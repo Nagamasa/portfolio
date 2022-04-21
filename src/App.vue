@@ -8,8 +8,10 @@ import { RouterLink, RouterView } from 'vue-router'
     <div>
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/about">Test</RouterLink>
+        <RouterLink to="/about">Profile</RouterLink>
+        <RouterLink to="/about">Skill</RouterLink>
+        <RouterLink to="/about">Work</RouterLink>
+        <RouterLink to="/about">Contact</RouterLink>
       </nav>
     </div>
   </header>
@@ -32,7 +34,7 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 nav {
-  text-align: left;
+  text-align: center;
   margin-left: -1rem;
   font-size: 1rem;
 
