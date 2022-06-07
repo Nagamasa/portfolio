@@ -1,9 +1,15 @@
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <p class="name">NAGANO MASASHI</p>
+  <p class="job">System Engineer</p>
 </template>
+<style scoped>
+.name {
+  font-size: 40px;
+}
+.job {
+  text-align: center;
+}
+</style>
