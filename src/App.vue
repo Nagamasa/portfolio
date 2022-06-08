@@ -4,22 +4,26 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <!-- header -->
-  <header>
-    <div>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/profile">Profile</RouterLink>
-        <RouterLink to="/about">Skill</RouterLink>
-        <RouterLink to="/about">Work</RouterLink>
-        <RouterLink to="/about">Contact</RouterLink>
-      </nav>
-    </div>
-  </header>
+  <div class="">
+    <header>
+      <div>
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/profile">Profile</RouterLink>
+          <RouterLink to="/about">Skill</RouterLink>
+          <RouterLink to="/about">Work</RouterLink>
+          <RouterLink to="/about">Contact</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-  <!-- body -->
-  <RouterView />
+    <!-- body -->
+    <main>
+      <RouterView />
+    </main>
 
-  <!-- footer -->
+    <!-- footer -->
+  </div>
 </template>
 
 <style>
@@ -45,13 +49,12 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: rgb(151, 156, 156);
   transition: 0.4s;
 }
 
@@ -72,5 +75,7 @@ nav a {
 body {
   display: flex;
   place-items: center;
+  background-color: rgb(227, 235, 235);
 }
+
 </style>
