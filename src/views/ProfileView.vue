@@ -63,7 +63,7 @@ h2 {
     left: 25%;
     padding: 15px 30px;
     margin-bottom: 10px;
-    background: rgb(26 27 33 / 80%);
+    background-color: rgb(26 27 33 / 80%);
     border: 5px solid rgb(151, 156, 156);
     text-shadow: 1px 1px 1px rgb(26 27 33 / 80%);
     color: rgba(255,255,255,.9);

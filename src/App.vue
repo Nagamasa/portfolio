@@ -41,7 +41,6 @@ nav {
   text-align: center;
   margin-left: -1rem;
   font-size: 1rem;
-
   padding: 1rem 0;
 }
 
@@ -50,11 +49,14 @@ header {
   left: 0;
   top: 0;
   width: 100vw;
-}
+  height: 50px;
+  color: rgb(240, 245, 245);
+  background-color: rgb(7, 7, 7);
+} 
 
 a {
   text-decoration: none;
-  color: rgb(151, 156, 156);
+  color: rgb(247, 248, 248);
   transition: 0.4s;
 }
 
@@ -75,7 +77,11 @@ nav a {
 body {
   display: flex;
   place-items: center;
-  background-color: rgb(227, 235, 235);
+  background-color: rgb(151, 156, 156);
 }
 
+main {
+  padding-top:100px;
+  z-index:-1;
+}
 </style>
