@@ -4,38 +4,41 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <!-- header -->
-  <header>
-    <div>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/about">Test</RouterLink>
-      </nav>
-    </div>
-  </header>
+  <div class="">
+    <header>
+      <div>
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/profile">Profile</RouterLink>
+          <RouterLink to="/about">Skill</RouterLink>
+          <RouterLink to="/about">Work</RouterLink>
+          <RouterLink to="/contact">Contact</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-  <!-- body -->
-  <RouterView />
+    <!-- body -->
+    <main>
+      <RouterView />
+    </main>
 
-  <!-- footer -->
+    <!-- footer -->
+  </div>
 </template>
 
 <style>
 @import '@/assets/base.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
 
 nav {
-  text-align: left;
+  text-align: center;
   margin-left: -1rem;
   font-size: 1rem;
-
   padding: 1rem 0;
 }
 
@@ -43,13 +46,15 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
-}
+  width: 100vw;
+  height: 50px;
+  color: rgb(240, 245, 245);
+  background-color: rgb(7, 7, 7);
+} 
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: rgb(247, 248, 248);
   transition: 0.4s;
 }
 
@@ -68,7 +73,14 @@ nav a {
 }
 
 body {
-  display: flex;
-  place-items: center;
+  /* display: flex; */
+  /* place-items: center; */
+  background-color: rgb(151, 156, 156);
+  font-family: Roboto;
+}
+
+main {
+  padding-top:100px;
+  z-index:-1;
 }
 </style>
