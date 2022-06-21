@@ -12,7 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
           <RouterLink to="/profile">Profile</RouterLink>
           <RouterLink to="/about">Skill</RouterLink>
           <RouterLink to="/about">Work</RouterLink>
-          <RouterLink to="/about">Contact</RouterLink>
+          <RouterLink to="/contact">Contact</RouterLink>
         </nav>
       </div>
     </header>
@@ -28,12 +28,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style>
 @import '@/assets/base.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
 
@@ -75,9 +73,10 @@ nav a {
 }
 
 body {
-  display: flex;
-  place-items: center;
+  /* display: flex; */
+  /* place-items: center; */
   background-color: rgb(151, 156, 156);
+  font-family: Roboto;
 }
 
 main {
