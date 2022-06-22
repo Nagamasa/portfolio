@@ -1,4 +1,6 @@
 <template>
+  <p class="title">Profile.</p>
+
   <div class="tree-container">
     <div class="leaf-row">
       <h2>2013.4 ~ 2017.3</h2>

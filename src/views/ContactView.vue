@@ -1,4 +1,6 @@
 <template>
+  <p class="title">Contact.</p>
+  
   <div class="container">
     <div class="text-area">
       <div>
