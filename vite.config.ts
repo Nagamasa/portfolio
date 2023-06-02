@@ -11,5 +11,9 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    // `root` からの相対パスで指定する
+    outDir: './docs',
   }
 })
