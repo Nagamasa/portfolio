@@ -6,6 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
@@ -15,5 +16,6 @@ export default defineConfig({
   build: {
     // `root` からの相対パスで指定する
     outDir: './docs',
-  }
+    assetsDir: './',
+  },
 })
