@@ -4,7 +4,7 @@
 <template>
   <div class="container">
     <p class="name">NAGANO MASASHI</p>
-    <p class="job">System Engineer</p>
+    <p class="job">Engineer</p>
   </div>
 </template>
 <style scoped>

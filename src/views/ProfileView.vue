@@ -1,76 +1,19 @@
+<script setup lang="ts">
+import LeafRow from '../components/LeafRow.vue'
+</script>
 <template>
   <p class="title">Profile.</p>
 
   <div class="tree-container">
-    <div class="leaf-row">
-      <h2>2013.4 ~ 2017.3</h2>
-      <h3 class="leaf-card"> 大学で電子情報工学を学ぶ。</h3>
-    </div>
+    <LeafRow title="2013.4 ~ 2017.3" sentence=" 大学で電子情報工学を学ぶ。"></LeafRow>
     <br>
-    <div class="leaf-row">
-      <h2>2017.7 ~ 2019.9</h2>
-      <h3 class="leaf-card">株式会社アルカディアプラス入社</h3>
-    </div>
-    <div class="leaf-row">
-      <h2></h2>
-      <h3 class="leaf-card">
-        大手住宅設備メーカーにてシステム開発に従事<br>
-        見積もり発注システムの開発・保守<br>
-        [使用言語] Java, JavaScript<br>
-        [DB] SQL Server<br>
-        [バージョン管理] SVN<br>
-      </h3>
-    </div>
+    <LeafRow title="2017.7 ~ 2019.9" sentence=" 株式会社アルカディアプラス入社"></LeafRow>
+    <LeafRow title="" sentence="大手住宅設備メーカーにてシステム開発に従事" substance="見積もり発注システムの開発・保守" language="[使用言語] Java, JavaScript" db="[DB] SQL Server"  versioncontrol="[バージョン管理] SVN"></LeafRow>
     <br>
-    <div class="leaf-row">
-      <h2>2019.10 ~ 2020.5</h2>
-      <h3 class="leaf-card">
-        大手SIerにてシステム開発に従事<br>
-        ログ分析ツールの改修・対話型サービスにおけるアプリケーション開発<br>
-        [使用言語] Node.js<br>
-        [バージョン管理] Git<br>
-        [クラウド] AWS<br>
-        [その他] Docker, ElasticSearch, Kibana, ansible
-      </h3>
-    </div>
+    <LeafRow title="2019.10 ~ 2020.5" sentence="大手SIerにてシステム開発に従事" substance="ログ分析ツールの改修・対話型サービスにおけるアプリケーション開発" language="[使用言語] Node.js" framework="[フレームワーク] Express" versioncontrol="[バージョン管理] Git" other="[その他] Docker, ElasticSearch, Kibana, ansible"></LeafRow>
     <br>
-    <div class="leaf-row">
-      <h2>2020.9 ~ </h2>
-      <h3 class="leaf-card">
-        株式会社エラン入社
-      </h3>
-    </div>
-    <div class="leaf-row">
-      <h2></h2>
-      <h3 class="leaf-card">
-        情報システム部にてシステム開発・保守に従事<br>
-        [使用言語] PHP, JavaScript, C#<br>
-        [DB] PostgreSQL<br>
-        [クラウド] AWS<br>
-        [その他] Docker, Finereport 
-      </h3>
-    </div>
+    <LeafRow title="2020.9 ~ " sentence="株式会社エラン入社" ></LeafRow>
+    <br>
+    <LeafRow title="" sentence="情報システム部にてシステム開発・保守に従事" language="[使用言語] PHP, JavaScript, C#" framework="[フレームワーク] Laravel, Vue" db="[DB] PostgreSQL" versioncontrol="[バージョン管理] Git" other="[その他] AWS, Docker, OpenSearch"></LeafRow>
   </div>
 </template>
-<style scoped>
-h2 {
-  color: rgb(19, 20, 20);
-  width: 200px;
-}
-.tree-container {
-  margin-left: 150px;
-}
-.leaf-row {
-  display: flex;
-}
-.leaf-card {
-    width: 75%;
-    left: 25%;
-    padding: 15px 30px;
-    margin-bottom: 10px;
-    background-color: rgb(26 27 33 / 80%);
-    border: 5px solid rgb(191, 199, 199);
-    text-shadow: 1px 1px 1px rgb(26 27 33 / 80%);
-    color: rgba(255,255,255,.9);
-}
-</style>

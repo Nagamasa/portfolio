@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import ProfileView from '../views/ProfileView.vue';
+import SkillView from '../views/SkillView.vue';
 import ContactView from '../views/ContactView.vue';
 
 
@@ -16,6 +17,11 @@ const router = createRouter({
       path: '/profile',
       name: 'profile',
       component: ProfileView
+    },
+    {
+      path: '/skill',
+      name: 'skill',
+      component: SkillView
     },
     {
       path: '/contact',
